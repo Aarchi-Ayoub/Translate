@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <Fragment>
       <div className="container mt-3">
-        <div className="row" style={{ width: "25%" }}>
+        {/* <div className="row" style={{ width: "25%" }}>
           <div className="col">
             <select
               onChange={handelChanges}
@@ -21,11 +21,11 @@ const Home = () => {
               <option value="ar">Arabe</option>
             </select>
           </div>
-        </div>
-        <div className="row" style={{ textAlign: "center" }}>
+        </div> */}
+        <div className="row">
           <div className="col">
             <h3>{t("title")}</h3>
-            <p>{t("text")}</p>
+            <Trans components={{ p: <p /> }}>{t("text")}</Trans>
           </div>
         </div>
       </div>
